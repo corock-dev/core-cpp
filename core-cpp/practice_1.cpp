@@ -2,36 +2,40 @@
 using namespace std;
 
 int main() {
-  int a;
+  int a,i;
   char grade;
   string s;
-  cin >> a;
+
+  for(i=0;i<4;i++){
+  cout <<"Enter a name and score\n";
   cin >> s;
+  cin >> a;
   if(a>=90&&a<=100)
   {
     grade ='A';
-    cout << s <<"학생의 점수는" << a<<"이고 학점은" <<grade <<"이다."<<endl;
+    cout << "Hi " <<s<<"! Your grade is " <<grade <<endl;
     }
   else if(a>=80&&a<90)
   {
     grade ='B';
-    cout << s <<"학생의 점수는" << a<<"이고 학점은" <<grade <<"이다."<<endl;
+   cout << "Hi " <<s<<"! Your grade is " <<grade <<endl;
     }
   else if(a>=70&&a<80)
   {
     grade ='C';
-    cout << s <<"학생의 점수는" << a<<"이고 학점은" <<grade <<"이다."<<endl;
+    cout << "Hi " <<s<<"! Your grade is " <<grade <<endl;
     }
     else if(a>=60&&a<70)
   {
     grade ='D';
-    cout << s <<"학생의 점수는" << a<<"이고 학점은" <<grade <<"이다."<<endl;
+    cout << "Hi " <<s<<"! Your grade is " <<grade <<endl;
     }
     else
     {
     grade ='F';
-    cout << s <<"학생의 점수는" << a<<"이고 학점은" <<grade <<"이다."<<endl;
+    cout << "Hi " <<s<<"! Your grade is " <<grade <<endl;
     }
-
+  }
+  cout<<"Bye Elsa";
 return 0;
 }
